@@ -6,8 +6,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix",
-    "type-check": "tsc"
+    "lint": "eslint . --ext .jsx,.js,.ts,.tsx --fix",
+    "prepare": "husky install",
+    "test": "yarn lint"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -26,10 +27,11 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "pre-commit": "^1.2.2",
+    "husky": "^6.0.0",
     "prettier": "^2.3.0",
     "typescript": "^4.1.2",
-    "vite": "^2.3.0"
+    "vite": "^2.3.0",
+    "vite-plugin-fonts": "^0.2.2"
   },
   "pre-commit": "lint"
 }
