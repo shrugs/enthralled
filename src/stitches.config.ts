@@ -38,21 +38,21 @@ const spacing = {
   80: '20rem',
   96: '24rem',
   //
-  '1/2': '50%',
-  '1/3': '33.333333%',
-  '2/3': '66.666667%',
-  '1/4': '25%',
-  '2/4': '50%',
-  '3/4': '75%',
-  '1/5': '20%',
-  '2/5': '40%',
-  '3/5': '60%',
-  '4/5': '80%',
-  '1/6': '16.666667%',
-  '2/6': '33.333333%',
-  '3/6': '50%',
-  '4/6': '66.666667%',
-  '5/6': '83.333333%',
+  half: '50%',
+  // '1/3': '33.333333%',
+  // '2/3': '66.666667%',
+  // '1/4': '25%',
+  // '2/4': '50%',
+  // '3/4': '75%',
+  // '1/5': '20%',
+  // '2/5': '40%',
+  // '3/5': '60%',
+  // '4/5': '80%',
+  // '1/6': '16.666667%',
+  // '2/6': '33.333333%',
+  // '3/6': '50%',
+  // '4/6': '66.666667%',
+  // '5/6': '83.333333%',
   full: '100%',
   screen: '100vh',
 };
@@ -220,7 +220,7 @@ export const { styled, global, keyframes, theme } = createCss({
     my: (config) => (value: any) => ({ marginTop: value, marginBottom: value }),
 
     ta: (config) => (value: any) => ({ textAlign: value }),
-    bc: (config) => (value: any) => ({ backgroundColor: value }),
+    bg: (config) => (value: any) => ({ background: value }),
 
     // flex
     fd: (config) => (value: any) => ({ flexDirection: value }),
@@ -254,6 +254,8 @@ export const { styled, global, keyframes, theme } = createCss({
     pe: (config) => (value: any) => ({ pointerEvents: value }),
     us: (config) => (value: any) => ({ WebkitUserSelect: value, userSelect: value }),
 
+    w: (config) => (value: any) => ({ width: value }),
+    h: (config) => (value: any) => ({ height: value }),
     size: (config) => (value: any) => ({ width: value, height: value }),
 
     // linearGradient: (config) => (value: any) => ({
