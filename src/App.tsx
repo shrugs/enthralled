@@ -1,7 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { Book } from './pages/Book';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
-  return <div>hello world</div>;
+  return (
+    <Router>
+      <Switch>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+        <Route path="/">
+          <Book />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
