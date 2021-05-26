@@ -2,8 +2,9 @@ import React, { useMemo } from 'react';
 import { Descendant, Element, Node } from 'slate';
 
 import enthralled from '../assets/enthralled.json';
-import { Box } from '../components/basic';
+import { Box, Separator } from '../components/basic';
 import { Serialize } from '../components/Serialize';
+import { AnnotationElement, FragmentElement } from '../editor/editor';
 import { NavigationStack } from '../lib/NavigationStack';
 import { styled } from '../stitches.config';
 
@@ -23,26 +24,36 @@ const ContentContainer = styled('div', {
   },
 });
 
-const makeFragment = (children: Descendant[]): Descendant => ({ type: 'fragment', children });
+const makeFragment = (children: Descendant[]): FragmentElement => ({ type: 'fragment', children });
+
+type TopLevelNode = FragmentElement | AnnotationElement;
 
 function RenderFocusedContent() {
   const nav = NavigationStack.useContainer();
-  const node = useMemo(() => {
-    let curr = makeFragment(enthralled as Descendant[]);
+  const [prev, node]: [TopLevelNode | undefined, TopLevelNode] = useMemo(() => {
+    let prev: TopLevelNode | undefined;
+    let curr: TopLevelNode = makeFragment(enthralled as Descendant[]);
     for (const id of nav.stack) {
       for (const [node] of Node.nodes(curr)) {
         if (Element.isElement(node) && node.type === 'annotation' && node.id === id) {
-          curr = makeFragment(node.children);
-          continue;
+          prev = makeFragment(node.children);
+          curr = makeFragment(node.content);
+          break;
         }
       }
     }
 
-    return curr;
+    return [prev, curr];
   }, [nav.stack]);
 
   return (
     <ContentContainer annotation={nav.stack.length > 0}>
+      {prev && (
+        <>
+          <Serialize node={makeFragment(prev.children)} />
+          <Separator />
+        </>
+      )}
       <Serialize node={node} />
     </ContentContainer>
   );

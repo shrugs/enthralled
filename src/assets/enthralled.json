@@ -194,7 +194,64 @@
         "id": "7",
         "content": [
           {
-            "text": ""
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "annotation",
+                "id": "A",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "annotation",
+                        "id": "B",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "children": [
+                              {
+                                "text": "If these make you feel offended, you need to check out why you respond so poorly to the truth.",
+                                "strikethrough": true
+                              }
+                            ]
+                          }
+                        ],
+                        "children": [
+                          {
+                            "text": "It’s obviously not the ",
+                            "strikethrough": true
+                          },
+                          {
+                            "text": "only",
+                            "italic": true,
+                            "strikethrough": true
+                          },
+                          {
+                            "text": " way; racism works too. Nor is it ",
+                            "strikethrough": true
+                          },
+                          {
+                            "text": "just",
+                            "italic": true,
+                            "strikethrough": true
+                          },
+                          {
+                            "text": " the Midwest, but disproportionately so.",
+                            "strikethrough": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "text": "Also so I can sell an infinite number of different-appearance-versions of plushie dolls, each of which are branded as “merchandise for this book”, all super-low quantity, ultra-rare runs, because that’s how you rip off poor people in the Midwest."
+                  }
+                ]
+              }
+            ]
           }
         ],
         "children": [

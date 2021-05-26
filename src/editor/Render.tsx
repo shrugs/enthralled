@@ -110,26 +110,22 @@ function ImageElement({ attributes, children, element }: RenderElementProps) {
 }
 
 export function Leaf({ attributes, children, leaf }: RenderLeafProps) {
-  const Element = leaf.bold
-    ? 'strong'
-    : leaf.code
-    ? 'code'
-    : leaf.italic
-    ? 'em'
-    : leaf.underline
-    ? 'u'
-    : leaf.strikethrough
-    ? 'del'
-    : 'span';
-
   return (
-    <Element
-      style={{
-        backgroundColor: leaf.redacted ?? undefined,
+    <Box
+      as="span"
+      css={{
+        bg: leaf.redacted ?? undefined,
+        fontWeight: leaf.bold ? '$bold' : undefined,
+        fontStyle: leaf.italic ? 'italic' : undefined,
+        textDecoration: leaf.strikethrough
+          ? 'line-through'
+          : leaf.underline
+          ? 'underline'
+          : undefined,
       }}
       {...attributes}
     >
       {children}
-    </Element>
+    </Box>
   );
 }

@@ -166,27 +166,23 @@ export function PlainElement(props: PlainElementProps) {
 }
 
 export function PlainLeaf({ children, leaf, ...rest }: Pick<RenderLeafProps, 'leaf' | 'children'>) {
-  const Element = leaf.bold
-    ? 'strong'
-    : leaf.code
-    ? 'code'
-    : leaf.italic
-    ? 'em'
-    : leaf.underline
-    ? 'u'
-    : leaf.strikethrough
-    ? 'del'
-    : 'span';
-
   return (
-    <Element
-      style={{
-        backgroundColor: leaf.redacted ?? undefined,
+    <Box
+      as="span"
+      css={{
+        bg: leaf.redacted ?? undefined,
+        fontWeight: leaf.bold ? '$bold' : undefined,
+        fontStyle: leaf.italic ? 'italic' : undefined,
+        textDecoration: leaf.strikethrough
+          ? 'line-through'
+          : leaf.underline
+          ? 'underline'
+          : undefined,
       }}
       {...rest}
     >
       {children}
-    </Element>
+    </Box>
   );
 }
 

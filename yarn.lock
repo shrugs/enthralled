@@ -338,7 +338,7 @@
     "@radix-ui/react-use-callback-ref" "0.0.5"
     "@radix-ui/react-use-controllable-state" "0.0.6"
 
-"@radix-ui/react-separator@0.0.13":
+"@radix-ui/react-separator@0.0.13", "@radix-ui/react-separator@^0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-separator/-/react-separator-0.0.13.tgz#5b6b5d1a5ad7b59e050fabb76f9bc34e0e0043c4"
   integrity sha512-VGfM9rFqu3vqtAtQm/qkVf7urRL9pehgv2Hn+AxWh7j3ai8yDWIYnYxFU0fnG3pefNj3CoQyy+y+TUB6RTC+FA==

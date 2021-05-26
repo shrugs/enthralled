@@ -61,8 +61,6 @@ export const deserialize = (el: HTMLElement): any => {
   const { nodeName } = el;
   let parent: HTMLElement = el;
 
-  console.log(`-- parsing ${nodeName}`);
-
   if (nodeName === 'PRE' && el.childNodes[0] && el.childNodes[0].nodeName === 'CODE') {
     parent = el.childNodes[0] as HTMLElement;
   }
@@ -78,7 +76,6 @@ export const deserialize = (el: HTMLElement): any => {
   if (ELEMENT_TAGS[nodeName]) {
     const attrs = ELEMENT_TAGS[nodeName](el);
     if (attrs !== null) {
-      console.log(`element`, attrs, children);
       return jsx('element', attrs, children);
     }
   }
@@ -86,7 +83,6 @@ export const deserialize = (el: HTMLElement): any => {
   if (TEXT_TAGS[nodeName]) {
     const attrs = TEXT_TAGS[nodeName](el);
     if (attrs !== null) {
-      console.log(`text`, attrs, children);
       return children.map((child) => jsx('text', attrs, child));
     }
   }
