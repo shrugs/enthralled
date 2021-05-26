@@ -193,9 +193,9 @@ export function Serialize({ node }: { node: Descendant }) {
 
   return (
     <PlainElement element={node}>
-      {node.children?.map((child, i) => (
-        <Serialize key={i} node={child} />
-      ))}
+      {node.type !== 'image' && node.type !== 'link'
+        ? node.children.map((child: Descendant, i: number) => <Serialize key={i} node={child} />)
+        : null}
     </PlainElement>
   );
 }
