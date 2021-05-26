@@ -1,12 +1,46 @@
 import React from 'react';
 import { RenderElementProps, RenderLeafProps } from 'slate-react';
 
+import { Box } from '../components/basic';
+import { styled } from '../stitches.config';
+
+const Annotation = styled('span', {
+  backgroundColor: 'red',
+});
+
+const Anchor = styled('a', {
+  textDecoration: 'underline',
+  cursor: 'pointer',
+  color: 'blue',
+});
+
+const Paragraph = styled('p', {
+  mb: '$4',
+});
+
+function AnnotationElement({ attributes, element, children }: RenderElementProps) {
+  if (element.type !== 'annotation') throw new Error(`<AnnotationElement /> expects annotation`);
+
+  return <Annotation {...attributes}>{children}</Annotation>;
+}
+
+function ChapterElement({ attributes, element, children }: RenderElementProps) {
+  if (element.type !== 'chapter') throw new Error(`<ChapterElement /> expects chapter`);
+
+  return (
+    <Box css={{ py: '$48', textAlign: 'center' }}>
+      <Box as="h2" css={{ pb: '$2' }}>
+        {element.title}
+      </Box>
+      <Box {...attributes}>{children}</Box>
+    </Box>
+  );
+}
+
 export function Element(props: RenderElementProps) {
   const { attributes, children, element } = props;
 
   switch (element.type) {
-    default:
-      return <p {...attributes}>{children}</p>;
     case 'quote':
       return <blockquote {...attributes}>{children}</blockquote>;
     case 'code':
@@ -35,12 +69,20 @@ export function Element(props: RenderElementProps) {
       return <ol {...attributes}>{children}</ol>;
     case 'link':
       return (
-        <a href={element.url} {...attributes}>
+        <Anchor href={element.url} {...attributes}>
           {children}
-        </a>
+        </Anchor>
       );
     case 'image':
       return <ImageElement {...props} />;
+    case 'chapter':
+      return <ChapterElement {...props} />;
+    case 'annotation':
+      return <AnnotationElement {...props} />;
+    case 'fragment':
+      return <div {...attributes}>{children}</div>;
+    default:
+      return <Paragraph {...attributes}>{children}</Paragraph>;
   }
 }
 

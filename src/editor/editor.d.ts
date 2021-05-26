@@ -1,12 +1,17 @@
-import { BaseEditor } from 'slate';
+import { BaseEditor, Descendant } from 'slate';
 import { HistoryEditor } from 'slate-history';
 import { ReactEditor } from 'slate-react';
 
 export type CustomEditor = BaseEditor & ReactEditor & HistoryEditor;
 
+export type FragmentElement = {
+  type: 'fragment';
+  children: Descendant[];
+};
+
 export type ParagraphElement = {
   type: 'paragraph';
-  children: CustomText[];
+  children: Descendant[];
 };
 
 export type HeadingElement = {
@@ -80,7 +85,22 @@ export type NumberedListElement = {
   children: CustomText[];
 };
 
+export type ChapterElement = {
+  type: 'chapter';
+  title: string;
+  children: Descendant[];
+};
+
+// an annotation wraps some children elements and contains content
+export type AnnotationElement = {
+  type: 'annotation';
+  id: string;
+  children: Descendant[];
+  content: Descendant[];
+};
+
 export type CustomElement =
+  | FragmentElement
   | ParagraphElement
   | HeadingElement
   | ImageElement
@@ -95,7 +115,9 @@ export type CustomElement =
   | HeadingFiveElement
   | HeadingSixElement
   | ListItemElement
-  | NumberedListElement;
+  | NumberedListElement
+  | ChapterElement
+  | AnnotationElement;
 
 export type RedactionColor = 'black' | 'yellow' | 'fuchsia';
 

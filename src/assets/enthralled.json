@@ -1,0 +1,280 @@
+[
+  {
+    "type": "chapter",
+    "title": "Chapter -2",
+    "children": [
+      {
+        "text": "Blurb/Synopsis on the Back Cover"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "I don't believe in book jacket covers. They’re generally marketing bullshi"
+      },
+      {
+        "text": "p",
+        "redacted": "black"
+      },
+      {
+        "text": "."
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "I spend most of my professional life writing marketing bullshi"
+      },
+      {
+        "text": "p",
+        "redacted": "black"
+      },
+      {
+        "text": ". (Marketing, at least; only a small portion is bullshi"
+      },
+      {
+        "text": "p",
+        "redacted": "black"
+      },
+      {
+        "text": ".) A book should be art. "
+      },
+      {
+        "text": "A cover, however, exists to sell the book",
+        "bold": true
+      },
+      {
+        "text": ". This annoys me: No me likey. “"
+      },
+      {
+        "text": "Still",
+        "italic": true
+      },
+      {
+        "text": ",” I muse…"
+      },
+      {
+        "text": "“one must succeed within the form...\"",
+        "italic": true
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Go read the first few pages of pre-text material before the book starts. You get an accurate feel in those first few pages: the author's note, content contained, and arguments against grammar. They’re 1, 3, and 1 page → 5 pages total → it's\nnot a long read; don't be a wuss. "
+      },
+      {
+        "type": "annotation",
+        "id": "1",
+        "content": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "(This one included)"
+              }
+            ]
+          }
+        ],
+        "children": [
+          {
+            "text": "It will tell you more than any book jacket summary you've ever read."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Those pages are also available online. If you can't find them, look harder. If you still can't find them, ask a friend for help. If you're *still* unable, contact me at "
+      },
+      {
+        "type": "link",
+        "url": "https://lmgtfy.com/?q=Digital+Aristotle+First+Three+Pages",
+        "children": [
+          {
+            "text": "https://lmgtfy.com/?q=Digital+Aristotle+First+Three+Pages",
+            "strikethrough": true
+          }
+        ]
+      },
+      {
+        "text": " "
+      },
+      {
+        "type": "link",
+        "url": "https://lmgtfy.app/?q=The+Last+Six+Years+First+Few+Pages",
+        "children": [
+          {
+            "text": "https://lmgtfy.app/?q=The+Last+Six+Years+First+Few+Pages",
+            "strikethrough": true
+          }
+        ]
+      },
+      {
+        "text": " "
+      },
+      {
+        "type": "link",
+        "url": "https://lmgtfy.app/?q=Enthralled%20+First+Few+Pages",
+        "children": [
+          {
+            "text": "https://lmgtfy.app/?q=Enthralled +First+Few+Pages"
+          }
+        ]
+      },
+      {
+        "text": ". "
+      },
+      {
+        "type": "annotation",
+        "id": "2",
+        "content": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "This blurb is written by the author. That's why it doesn't suck."
+              }
+            ]
+          }
+        ],
+        "children": [
+          {
+            "text": "Use them to decide how you spend hours of your life, not some book jacket blurb written by some two-bit copywriter."
+          }
+        ]
+      },
+      {
+        "text": " Really, go read them—I'll wait here.",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you're not gonna read those pages, that's cool too. You probably wouldn't like the\nbook. It's odd and weird and a new use of the medium… 🧐 "
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "So is this blurb; wouldja look at that. 😁"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "My Darling Public,"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "I wish you were sufficiently competent to read this book in its original form. Unfortunately, you are not: No, no, bonobo. You are frequently rash and rarely considerate of others’ privacy and/or priorities. "
+      },
+      {
+        "type": "annotation",
+        "id": "7",
+        "content": [
+          {
+            "text": ""
+          }
+        ],
+        "children": [
+          {
+            "text": "I have therefore redacted names and identifying information."
+          }
+        ]
+      },
+      {
+        "text": " One day, perhaps, you shall earn my trust and learn the rest of the gory details."
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Signed, "
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "annotation",
+        "id": "8",
+        "content": [
+          {
+            "text": ""
+          }
+        ],
+        "children": [
+          {
+            "text": "THE MANAGEMENT FOR YOUR PROTECTION",
+            "strikethrough": true
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "annotation",
+        "id": "9",
+        "content": [
+          {
+            "text": ""
+          }
+        ],
+        "children": [
+          {
+            "text": "THE AUTHOR."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "annotation",
+        "id": "10",
+        "content": [
+          {
+            "text": ""
+          }
+        ],
+        "children": [
+          {
+            "text": ""
+          }
+        ]
+      }
+    ]
+  }
+]

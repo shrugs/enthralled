@@ -11,7 +11,7 @@ function App() {
         <Route path="/dashboard">
           <Dashboard />
         </Route>
-        <Route path="/">
+        <Route path="/:stack?">
           <Book />
         </Route>
       </Switch>
