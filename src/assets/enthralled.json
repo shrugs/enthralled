@@ -281,7 +281,12 @@
         "id": "8",
         "content": [
           {
-            "text": ""
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "I used to think “The Management for Your Protection” was a government department, like the Food & Drug Administration” or the “Center for Disease Control”. I thought they were the ones supplying those little paper toilet seat covers that protect your butt in public toilets… because the dispenser for those always, “Provided by the Management for your Protection”. "
+              }
+            ]
           }
         ],
         "children": [
@@ -304,7 +309,28 @@
         "id": "9",
         "content": [
           {
-            "text": ""
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "annotation",
+                "id": "A",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Leading to a note by my feet."
+                      }
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "text": "When I die, my tombstone shall have a footnote."
+                  }
+                ]
+              }
+            ]
           }
         ],
         "children": [
@@ -323,12 +349,50 @@
         "id": "10",
         "content": [
           {
-            "text": ""
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "If you’re still uncertain about reading this tome, here’s what one reviewer wrote, specifically about the climax in chapter 10:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "· “I think this is a moment in your book that people will point to and say ‘this is why it’s powerful.’ ‘Look at how vulnerable he is’ ‘Powerful. Strong. Courageous…’ Many who read this, possibly including me, won’t understand the magnitude of what lies here. But for those who need it, for those who it truly matters for, I think they will. And that is something to celebrate.” "
+              }
+            ]
           }
         ],
         "children": [
           {
             "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "chapter",
+    "title": "Chapter -1",
+    "children": [
+      {
+        "type": "annotation",
+        "id": "11",
+        "content": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "For more about why this page exists, read the post “The Wonderful Thing About Triggers” on the blog Slate Star Codex."
+              }
+            ]
+          }
+        ],
+        "children": [
+          {
+            "text": "Content Contained"
           }
         ]
       }
