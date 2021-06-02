@@ -1,0 +1,15 @@
+{
+  "github": {
+    "silent": true
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/dashboard",
+      "dest": "/"
+    }
+  ]
+}
